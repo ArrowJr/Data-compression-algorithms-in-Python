@@ -79,7 +79,7 @@ Bit_Encoder(upper_grp,lower_grp)
 
 print('-----------------------------')
 
-if len(upper_grp)>=1:
+if len(upper_grp)>1:
     print(upper_grp)
     print(SeperationIndex(upper_grp))
     Bit_Encoder(upper_grp,lower_grp)
@@ -89,12 +89,25 @@ print('-----------------------------')
 
 print(SeperationIndex(count_vals))
 low1=lower_grp.copy()
-if len(lower_grp)>=1:
+if len(lower_grp)>1:
     print(lower_grp)
     print(SeperationIndex(lower_grp))
     Bit_Encoder(upper_grp,lower_grp)
-    
 
+SeperationIndex(low1)
+
+if len(low1)>1:
+    print(lower_grp)
+    print(SeperationIndex(upper_grp))
+    Bit_Encoder(upper_grp,lower_grp)
+
+
+
+SeperationIndex(low1)    
+if len(low1)>1:
+    print(lower_grp)
+    print(SeperationIndex(lower_grp))
+    Bit_Encoder(upper_grp,lower_grp)
 
 
 print('---------------------------------------------------------------')
