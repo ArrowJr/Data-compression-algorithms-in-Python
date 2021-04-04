@@ -1,1 +1,2 @@
-This is a test for creating folders
+This folder is created for compression algorithms
+
